@@ -1,0 +1,181 @@
+Last login: Tue Oct  6 09:10:50 on ttys000
+~ $ pwd
+/Users/faetea
+~ $ ls
+Applications Downloads    Movies       Public       git_hug
+Desktop      Dropbox      Music        Sites
+Documents    Library      Pictures     WDI
+~ $ cd wdi
+~/wdi $ ls
+CLRef.txt                Orientation - WDI-09.pdf faetea
+JSexamples.js            challenges.html          prework
+MortStore                challenges.js            satOct3.js
+~/wdi $ cd faetea
+~/wdi/faetea $ ls
+agile-user-stories                   js-functions-ins-and-outs-assessment
+agile-user-stories-lab               js-objects-intro
+git-basics-assessment                js-objects-intro-assessment
+git-basics-lab                       js-objects-intro-constructors
+js-basics-1                          js-objects-stack-warmup
+js-basics-1-assessment               project-1-tttgame
+js-basics-2                          unix-cli-intro-assessment
+js-basics-2-practice
+~/wdi/faetea $ npm install -g javascripting
+/Users/faetea/.nvm/versions/node/v4.1.1/bin/javascripting -> /Users/faetea/.nvm/versions/node/v4.1.1/lib/node_modules/javascripting/index.js
+javascripting@2.1.0 /Users/faetea/.nvm/versions/node/v4.1.1/lib/node_modules/javascripting
+├── diff@1.4.0
+├── colors@1.1.2
+├── cli-md@0.1.0 (marked@0.3.5, chalk@0.5.1, concat-stream@1.5.0, cardinal@0.4.4)
+└── workshopper-adventure@3.5.2 (map-async@0.1.1, xtend@3.0.0, through@2.3.8, visualwidth@0.0.1, minimist@1.2.0, mkdirp@0.3.5, chalk@0.4.0, colors-tmpl@0.1.1, combined-stream@0.0.7, i18n-core@1.3.3, terminal-menu@2.1.1, msee@0.1.1, simple-terminal-menu@1.1.1)
+~/wdi/faetea $ mkdir js-review
+~/wdi/faetea $ ls
+agile-user-stories                   js-functions-ins-and-outs-assessment
+agile-user-stories-lab               js-objects-intro
+git-basics-assessment                js-objects-intro-assessment
+git-basics-lab                       js-objects-intro-constructors
+js-basics-1                          js-objects-stack-warmup
+js-basics-1-assessment               js-review
+js-basics-2                          project-1-tttgame
+js-basics-2-practice                 unix-cli-intro-assessment
+~/wdi/faetea $ cd js-review
+~/wdi/faetea/js-review $ ls
+~/wdi/faetea/js-review $ git init
+Initialized empty Git repository in /Users/faetea/WDI/faetea/js-review/.git/
+~/wdi/faetea/js-review (master)$ touch README.md
+~/wdi/faetea/js-review (master)$ subl . readme.md
+~/wdi/faetea/js-review (master)$ read README.md
+
+-bash: read: `README.md': not a valid identifier
+~/wdi/faetea/js-review (master)$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+~/wdi/faetea/js-review (master)$ git add README.md 
+~/wdi/faetea/js-review (master)$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   README.md
+
+~/wdi/faetea/js-review (master)$ git commit
+[master (root-commit) 9c86e17] README.md created
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+~/wdi/faetea/js-review (master)$ git status
+On branch master
+nothing to commit, working directory clean
+~/wdi/faetea/js-review (master)$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+~/wdi/faetea/js-review (master)$ git remote add javascripting_review github.com
+~/wdi/faetea/js-review (master)$ git push javascripting_review
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream javascripting_review master
+
+~/wdi/faetea/js-review (master)$ git push --set-upstream javascripting_review master
+fatal: 'github.com' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+~/wdi/faetea/js-review (master)$ git push git@github.com:faetea/javascripting-review.git
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream git@github.com:faetea/javascripting-review.git master
+
+~/wdi/faetea/js-review (master)$ git push --set-upstream git@github.com:faetea/javascripting-review.git master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 251 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@github.com:faetea/javascripting-review.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from git@github.com:faetea/javascripting-review.git.
+~/wdi/faetea/js-review (master)$ git status
+On branch master
+nothing to commit, working directory clean
+~/wdi/faetea/js-review (master)$ javascripting
+
+
+                                                                       
+    JAVASCRIPTING                                                      
+    ─────────────────────────────────────────────────────────────────  
+    » INTRODUCTION                                                     
+    » VARIABLES                                                        
+    » STRINGS                                                          
+    » STRING LENGTH                                                    
+    » REVISING STRINGS                                                 
+    » NUMBERS                                                          
+    » ROUNDING NUMBERS                                                 
+    » NUMBER TO STRING                                                 
+    » IF STATEMENT                                                     
+    » FOR LOOP                                                         
+    » ARRAYS                                                           
+    » ARRAY FILTERING                                                  
+    » ACCESSING ARRAY VALUES                                           
+    » LOOPING THROUGH ARRAYS                                           
+    » OBJECTS                                                          
+    » OBJECT PROPERTIES                                                
+    » FUNCTIONS                                                        
+    » FUNCTION ARGUMENTS                                               
+    » SCOPE                                                            
+                                                                       
+-------------------
+# INTRODUCTION
+
+To keep things organized, let's create a folder for this workshop. 
+
+Run this command to make a directory called javascripting (or something else if you like):
+
+mkdir javascripting
+
+Change directory into the javascripting folder:
+
+cd javascripting
+
+Create a file named introduction.js:
+
+touch introduction.js or if you're on windows, type NUL > introduction.js (type is part of the command!)
+
+Open the file in your favorite editor, and add this text:
+
+console.log('hello');
+
+Save the file, then check to see if your program is correct by running this command:
+
+javascripting verify introduction.js
+
+By the way, throughout this tutorial, you can name give the file you work with any name you like, so if you want to use something like catsAreAwesome.js file for every exercise, you can do that. Just make sure to run:
+
+javascripting verify catsAreAwesome.js
+
+-------------------
+Need help? View the README for this workshop: [http://github.com/sethvincent/javascripting](http://github.com/sethvincent/javascripting)
+
+
+ » To print these instructions again, run: javascripting print
+ » To execute your program in a test environment, run: javascripting run program.js
+ » To verify your program, run: javascripting verify program.js
+ » For help run: javascripting help
+
+~/wdi/faetea/js-review (master)$ 

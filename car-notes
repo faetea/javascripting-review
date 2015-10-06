@@ -1,0 +1,117 @@
+Honest Tom's used car lot
+
+
+Personas
+
+name : Tom
+role : Lot Manager
+
+view complete inventory, wants to see what cars are on the lot at the moment
+views past purchase price for all cars, knows what cars where bought, what was paid
+views retail/sticker price for all cars, knows sticker price for each car on the lot
+views store profits, How much profit if sold all available cars in lot today at retail price
+subtract 23% commission from sticker price
+know what cars are in repair
+subtract cars in repair from function
+
+
+name : Jane
+role : Salesperson domestic
+
+views domestic inventory
+views wholesale price for domestic cars
+views retail/sticker price for domestic cars
+23% commission
+need to know what domestic cars are in repair
+want to subtract domestic cars in repair from function
+
+
+name : Jim
+role : Salesperson foriegn
+
+need to access to foriegn inventory
+23% commission
+knows wholesale price for domestic car
+knows retail/sticker price for foriegn cars
+need to know what foriegn cars are in repair
+want to subtract foriegn cars in repair from function
+
+
+name : Alice
+role : Mechanic
+
+knows what is in repair
+
+
+
+
+Inventory Epic
+
+Story 1
+As Lot Manager, Tom
+Can log the car wholesale cost, when purchases car from factory
+(Conditions of Satisfaction) Car must be placed in a department, can be uniquely identified and have name and description.
+
+Story 2
+As Lot Manager, Tom
+Can set the car sticker/retail price.
+(Conditions of Satisfaction) Car must be given retail price only after logging wholesale cost.
+
+Story 3
+Salespeople, Jane & Jim
+Can set the product sale price in their department
+(Conditions of Satisfaction) Car’s sale price must be less than car’s retail price. Sale price can be lower than wholesale price, perhaps to draw in customers.
+
+Story 4
+Mechanic, Alice
+Logs what cars are in repair
+
+
+
+
+Inventory Epic
+
+Story 5
+As Lot Manager, Tom
+Can view/edit available cars domestic, available cars foreign, and awaiting repair.
+(Acceptance Criteria) Cars must be shown in alphabetically order showing only car manufacturer name and brief description (no more than 20 characters)
+
+Story 6
+As Salesperson, Jane
+Can view/notEdit department Domestic cars total
+Can view/notEdit sort into available cars domestic, and awaiting repair.
+(Acceptance Criteria) The set of cars can be filtered by department name. Cars must be shown in alphabetically order showing only car manufacturer name and brief description (no more than 20 characters)
+
+Story 7
+As Salesperson, Jim
+Can view/notEdit department Foreign cars total
+Can view/notEdit sort into available cars foreign, and awaiting repair.
+(Acceptance Criteria) The set of cars can be filtered by department name. Cars must be shown in alphabetically order showing only car manufacturer name and brief description (no more than 20 characters)
+
+Story 8
+All employees
+Can view a single car at a time.
+(Acceptance Criteria) Can view the car’s retail price, description, product identifier and whether it in stock.
+
+Story 9
+As Mechanic, Alice
+Can view/edit all cars that are awaiting repair
+
+
+
+
+Profit Epic (Functions)
+
+Story 10
+Tom wants to calculate Total Profit
+All retail price minus all commission, minus all wholesale price, equals total Tom will personally make
+
+Story 11
+Jane wants to calculate Total Commission
+23% of retail price for all Domestic
+retail price commission for all Domestic
+
+Story 12
+Jim wants to calculate Total Commission
+23% of retail price for all Foriegn
+retail price commission for all Foreign
